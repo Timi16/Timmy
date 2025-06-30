@@ -394,7 +394,7 @@ export default function Portfolio() {
                     <h3 className="font-semibold text-slate-800">B.Sc. Applied Mathematics</h3>
                     <p className="text-slate-600">University of Lagos, Nigeria</p>
                     <Badge variant="outline" className="border-slate-300 text-slate-600">
-                      Oct 2018 - Present
+                      Oct 2018 - 2022
                     </Badge>
                   </div>
                 </CardContent>
