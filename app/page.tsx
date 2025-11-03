@@ -1,5 +1,4 @@
 "use client"
-
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -19,7 +18,6 @@ import {
   Zap,
   Heart,
 } from "lucide-react"
-
 export default function Portfolio() {
   const skills = {
     frontend: [
@@ -40,6 +38,7 @@ export default function Portfolio() {
       { name: "WebSockets", icon: Server },
       { name: "Docker", icon: Server },
       { name: "Python", icon: Server },
+      { name: "Java", icon: Server },
     ],
     database: [
       { name: "PostgreSQL", icon: Database },
@@ -55,7 +54,6 @@ export default function Portfolio() {
       { name: "GitHub Actions", icon: Zap },
     ],
   }
-
   const projects = [
     {
       title: "Wager Me",
@@ -81,8 +79,31 @@ export default function Portfolio() {
       link: "https://linkly.africa",
       highlights: ["Content automation", "Analytics dashboard", "Team efficiency"],
     },
+    {
+      title: "Debonk",
+      description:
+        "A Telegram mini app and sniping bot for decentralized operations. Access via @debonk_bot.",
+      tech: ["Node.js", "JavaScript", "Telegram API", "Blockchain"],
+      link: "https://t.me/debonk_bot", // Assuming a Telegram link based on @debonk_bot
+      highlights: ["Telegram integration", "Sniping functionality", "Decentralized bot operations"],
+    },
+    {
+      title: "Dehug",
+      description:
+        "Decentralized version of Hugging Face for model sharing and collaboration.",
+      tech: ["React", "Next.js", "Blockchain", "Node.js"],
+      link: "https://dehug-ten.vercel.app/",
+      highlights: ["Decentralized model hosting", "Community collaboration", "Secure sharing"],
+    },
+    {
+      title: "Naira Rolls",
+      description:
+        "HR payment system built on Base for efficient and secure transactions.",
+      tech: ["React", "Node.js", "Blockchain", "Base Network"],
+      link: "https://nairarolls.vercel.app/",
+      highlights: ["HR payroll management", "On-chain payments", "Secure transactions on Base"],
+    },
   ]
-
   const experience = [
     {
       title: "Software Engineer",
@@ -118,7 +139,6 @@ export default function Portfolio() {
       ],
     },
   ]
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Hero Section */}
@@ -172,7 +192,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Skills Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -183,7 +202,6 @@ export default function Portfolio() {
                 Proficient in modern technologies and frameworks for building scalable applications
               </p>
             </div>
-
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <Card className="border-slate-200 hover:shadow-lg transition-shadow">
                 <CardHeader className="pb-4">
@@ -206,7 +224,6 @@ export default function Portfolio() {
                   </div>
                 </CardContent>
               </Card>
-
               <Card className="border-slate-200 hover:shadow-lg transition-shadow">
                 <CardHeader className="pb-4">
                   <CardTitle className="flex items-center gap-2 text-slate-800">
@@ -228,7 +245,6 @@ export default function Portfolio() {
                   </div>
                 </CardContent>
               </Card>
-
               <Card className="border-slate-200 hover:shadow-lg transition-shadow">
                 <CardHeader className="pb-4">
                   <CardTitle className="flex items-center gap-2 text-slate-800">
@@ -250,7 +266,6 @@ export default function Portfolio() {
                   </div>
                 </CardContent>
               </Card>
-
               <Card className="border-slate-200 hover:shadow-lg transition-shadow">
                 <CardHeader className="pb-4">
                   <CardTitle className="flex items-center gap-2 text-slate-800">
@@ -272,7 +287,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Experience Section */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
@@ -283,7 +297,6 @@ export default function Portfolio() {
                 Building innovative solutions across fintech, AI, and blockchain domains
               </p>
             </div>
-
             <div className="space-y-8">
               {experience.map((job, index) => (
                 <Card key={index} className="border-slate-200 hover:shadow-lg transition-shadow">
@@ -319,7 +332,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Projects Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -330,7 +342,6 @@ export default function Portfolio() {
                 Showcasing innovative solutions that solve real-world problems
               </p>
             </div>
-
             <div className="grid lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
                 <Card
@@ -376,7 +387,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Education & Interests */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
@@ -399,7 +409,6 @@ export default function Portfolio() {
                   </div>
                 </CardContent>
               </Card>
-
               <Card className="border-slate-200 hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-slate-900">
@@ -421,7 +430,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Contact Section */}
       <section className="py-20 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="container mx-auto px-4">
@@ -430,7 +438,6 @@ export default function Portfolio() {
             <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
               Ready to bring your next project to life? I'm always excited to work on innovative solutions.
             </p>
-
             <div className="flex flex-wrap justify-center gap-6 mb-12">
               <Button
                 size="lg"
@@ -459,7 +466,6 @@ export default function Portfolio() {
                 GitHub
               </Button>
             </div>
-
             <div className="grid md:grid-cols-3 gap-6 text-slate-400">
               <div className="flex flex-col items-center gap-2">
                 <Mail className="h-6 w-6 text-emerald-400" />
@@ -477,7 +483,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="bg-slate-900 text-slate-400 py-8">
         <div className="container mx-auto px-4 text-center">{/* Copyright text removed */}</div>
