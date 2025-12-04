@@ -1,7 +1,8 @@
 @import "tailwindcss";
-@import "tw-animate-css";
+/* Removed the non-existent "tw-animate-css" import that was causing build errors */
 
-@custom-variant dark (&:is(.dark *));
+/* Changed @custom-variant to @variant for Tailwind CSS v4 compatibility */
+@variant dark (&:is(.dark *));
 
 :root {
   --background: oklch(1 0 0);
@@ -75,6 +76,7 @@
 }
 
 @theme inline {
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
