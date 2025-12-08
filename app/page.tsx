@@ -30,7 +30,7 @@ export default function Portfolio() {
     backend: ["Node.js", "Express", "Django", "Python", "REST APIs", "Docker"],
     database: ["PostgreSQL", "MongoDB", "Firebase", "Redis"],
     blockchain: ["Web3.js", "Solidity", "Smart Contracts", "Ethers.js", "Hardhat"],
-    languages: ["JavaScript", "TypeScript", "Python", "Rust", "Solidity"],
+    languages: ["JavaScript", "TypeScript", "Python", "Rust", "Solidity","Swift",Swift UI"],
   }
 
   const projects = [
